@@ -1,56 +1,45 @@
 ---
-date: 2015-01-05T09:42:02+05:00
+date: 2017-05-31T15:10:23+08:00
 title: Context
 weight: 5
 ---
 
-A development team wanting to go ahead with Trunk-Based Development have pre-requisite achievements. Once the team has 
-done a few commits in the correct style, other things are now facilitated. We can show this as a layer cake:
+希望采用基于主干开发模式（TBD）的开发团队，需要具有一些先决条件。一旦团队使用正确的方式进行了一部分工作之后，其它事情就可以顺理成章的进行下去。我们通过下面分层蛋糕的样式进行展示：
 
 ![](layer_cake.png)
 
-DevOps is encompassing too. At the very least, the expansion of development best practices into operations heartlands.
+DevOps 的范围也正在扩展。开发的最佳实践至少已经延伸到了运维的核心地带。
 
-## Trunk-Based Development pre-requisites
+## 基于主干开发模式的先决条件
 
-(layers below it)
+(分层中TBD下面的部分)
 
-Installation of your VCS technology is part of a foundational development infrastructure that includes developer 
-workstations or laptops that are appropriate for build testing and running of the application or service being made.
-Developers running the application only need it to be functionally viable. It doesn't have to match the performance
-of the expected production environment, and it is OK for it to be non-functionally different in other ways too.
+部署版本控制系统是开发基础设施中的一部分，这包括开发人员用于运行构建测试和运行应用程序或服务的工作机或笔记本电脑。
 
-In the modern DevOps era, this probably means Infrastructure as Code. 
+开发人员环境只需在功能正常的情况下运行应用程序即可。没有必要匹配预期生产环境的性能，并且在其它方面的非功能性的区别也是可以接受的。
 
-## Trunk-Based Development facilitates
+在现今的 DevOps 时代，这就意味着基础设施即代码。
 
-(layers above it)
+## 基于主干开发模式有助于
 
-### Continuous Integration
+(分层中TBD上面的部分)
 
-[Continuous Integration](/continuous-integration/) (CI) has been in practice since the
-mid-nineties in its modern incarnation (integrating to a shared code line frequently and 
-testing that).
+### 持续集成
 
-Importantly, the reader should understand that there is a large overlap between Trunk-Based Development and 
-Continuous Integration, as defined by its definers and documenters. Whereas Trunk-Based Development focuses on a
-pure source-control workflow and an individual contributor's obligations to that, Continuous Integration focuses 
-equally on that and the need to have machines issue early warnings on breakages and incompatibilities.
+自九十年代中期以来，[持续集成](/continuous-integration/) (CI) 一直被实践中（频繁的代码集成和测试）。
 
-### Continuous Delivery
+重要的是，读者应该清楚，根据定义的不同，TBD 和 CI 之间有巨大的重叠部分。
 
-[Continuous Delivery](/continuous-delivery/) (CD) is a layer on top of that, has been practiced since the mid-2000's, and 
-documented in Jez Humble and Dave Farley's book of the same name in 2010.  This site gives a 5% summary of the 
-practice. The reader should dive into the Book and associated site, without delay.
+TBD 侧重于单纯的源码控制流程和源码贡献者对此流程的维护义务；持续集成则同样关注这一点，并且需要当破坏和不兼容的事件发生时及早进行警告。
 
-### Lean Experiments
+### 持续交付
 
-With CD locked in, continual improvement experiments can happen with a focus on time through "the machine" that is your 
-development and delivery operation. The experiments should draw off the field of science that is "Lean" so that the 
-impact of each experiment can be measured against predictions and decisions made appropriately following it.
+[持续交付](/continuous-delivery/) (CD) 是处于上面的那一层，自2000年代中期以来一直被反复实践， Jez Humble 和 Dave Farley 在2010年出版的同名书中对其进行了记录。这个站点给出了 5% 左右的实践概要。读者应该毫不犹豫的将关注点投入到这本书和相关网站中。
 
-Lean Experiments can happen in any development team on any project but work **best** on foundations that 
-are solid. Specifically, the solid foundations of Trunk-Based Development, CI, and CD. 
+### 精益实验
 
-This site does not touch on Lean Experiments beyond this section, but the reader should strive to understand that field
-of science when the lower layers of the stylized cake are solid.
+随着持续交付被采纳，持续的改进的实验将成为可能，其重点关注的是进行开发和交付操作所花费的时间。这些排减浪费的实验理论被称为“精益”，它使得实验中的每个影响都可以被针对性的预期，以此来做出适当的决策。
+
+精益实验可以在任何开发团队的任何项目中进行，但是在有坚实基础的团队**效果最好**。具体来说，坚实基础即是指TBD，CI 和 CD 。
+
+本站不涉及精益实验的其它内容，但当蛋糕的底层基础被建立起来的同时，读者应该努力了解它的全貌。
